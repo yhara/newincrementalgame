@@ -19,6 +19,13 @@
   height:24px;
 }
 
+table#chips {
+  border-collapse: collapse;
+}
+table#chips td {
+  padding:0;
+}
+
 .generator{
   font-size: 24px;
   vertical-align: middle;
