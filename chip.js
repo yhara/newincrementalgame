@@ -52,6 +52,13 @@ function Chipdata(){
     "白金片"
   ]
 
+  this.chipcolor = [
+    "#cd7f32",
+    "silver",
+    "gold",
+    "#E5E4E2"
+  ]
+
   this.chipbonusname =[
     "発生器効率",
     "発生器1効率",

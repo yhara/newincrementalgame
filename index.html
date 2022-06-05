@@ -524,7 +524,9 @@
 					<button @click="chipset(i-1,0)">
 						外す
 					</button>
-					現在: {{ player.setchip[i-1]==0?"なし":chipdata.chipname[player.setchip[i-1]-1] }}
+					現在:<span :style="{background: chipdata.chipcolor[player.setchip[i-1]-1]}">
+						{{ player.setchip[i-1]==0?"なし":chipdata.chipname[player.setchip[i-1]-1] }}
+					<span>
 				</div>
 				<div v-if="checkremembers()>=16" v-for="i in 20" :key="i">
 					鋳片効力 {{ i+32 }} : {{ chipdata.chipbonusname[i+32-1] }}
@@ -536,7 +538,9 @@
 					<button @click="chipset(i+32-1,0)">
 						外す
 					</button>
-					現在: {{ player.setchip[i+32-1]==0?"なし":chipdata.chipname[player.setchip[i+32-1]-1] }}
+					現在:<span :style="{background: chipdata.chipcolor[player.setchip[i+32-1]-1]}">
+						{{ player.setchip[i+32-1]==0?"なし":chipdata.chipname[player.setchip[i+32-1]-1] }}
+					</span>
 				</div>
 
 
